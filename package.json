@@ -1,39 +1,49 @@
 {
   "name": "opengtindb-client",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "NodeJS Client to access the Open EAN/GTIN Database API (http://opengtindb.org/)",
-  "main": "index.js",
+  "main": "index-compiled.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --harmony index.js"
+    "start": "node index-compiled.js"
   },
-  "maintainers": [
-    {
-      "name": "Felix Wahner",
-      "email": "felix.wahner@neuwaerts.de"
-    }
-  ],
+  "maintainers": [{
+    "name": "Felix Wahner",
+    "email": "felix.wahner@neuwaerts.de"
+  }, {
+    "name": "Dominic Rico Gómez",
+    "email": "hello@coderocket.me"
+  }],
   "author": {
     "name": "neuwaerts GmbH",
     "email": "info@neuwaerts.de"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/felixwahner/opengtindb-client"
+    "url": "git+https://github.com/dominicrico/opengtindb-client"
   },
   "bugs": {
-    "url": "https://github.com/felixwahner/opengtindb-client/issues"
+    "url": "https://github.com/dominicrico/opengtindb-client/issues"
   },
   "keywords": [
     "EAN",
     "GTIN",
     "opengtindb",
-    "neuwaerts"
+    "neuwaerts",
+    "es5",
+    "es2015"
   ],
   "license": "MIT",
   "dependencies": {
     "axios": "^0.16.2",
     "generic-bitmask": "0.0.7",
     "iconv-lite": "^0.4.18"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-plugin-transform-es2015-parameters": "^6.24.1"
   }
 }
