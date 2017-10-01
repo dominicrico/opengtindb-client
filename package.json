@@ -1,11 +1,12 @@
 {
-  "name": "opengtindb-client",
+  "name": "opengtindb-client-es5",
   "version": "0.0.4",
   "description": "NodeJS Client to access the Open EAN/GTIN Database API (http://opengtindb.org/)",
   "main": "index-compiled.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index-compiled.js"
+    "start": "node index-compiled.js",
+    "prepublish": "node_modules/babel-cli/bin/babel.js index.js --out-file index-compiled.js"
   },
   "maintainers": [{
     "name": "Felix Wahner",
